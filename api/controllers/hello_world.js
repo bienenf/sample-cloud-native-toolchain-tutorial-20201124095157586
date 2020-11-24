@@ -32,7 +32,7 @@ module.exports = {
 /*
   Functions in a127 controllers used for operations should take two parameters:
 
-  Param 1: a handle to the request object
+  Param 1: a handle to the request object -modifird
   Param 2: a handle to the response object
  */
 function hello(req, res) {
