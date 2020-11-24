@@ -1,4 +1,4 @@
-/*jslint node: true - a modifier  */
+/*jslint node: true */
 'use strict';
 /*
  'use strict' is not required but helpful for turning syntactical errors into true errors in the program flow
@@ -32,13 +32,13 @@ module.exports = {
 /*
   Functions in a127 controllers used for operations should take two parameters:
 
-  Param 1: a handle to the request object -modifird - J'ai modifié cette page !
+  Param 1: a handle to the request object
   Param 2: a handle to the response object
  */
 function hello(req, res) {
   // variables defined in the Swagger document can be referenced using req.swagger.params.{parameter_name}
   var name = req.swagger.params.name.value || 'stranger';
-  var helloname = util.format('Hello2 There, %s!', name);
+  var helloname = util.format('Hello, %s!', name);
 
   // this sends back a JSON response which is a single string
   res.json(helloname);
